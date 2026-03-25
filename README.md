@@ -80,6 +80,11 @@ int main() {
 }
 ```
 # Output:
+```
+Enter marks for Math, Science, and English: 85 90 80
+Average: 85.00 Grade: B
+```
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
