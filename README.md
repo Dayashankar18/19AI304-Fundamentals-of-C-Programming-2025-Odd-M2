@@ -15,7 +15,7 @@
   
   The program should display the average marks up to two decimal places and the corresponding grade. 
   
-# Date : 
+# Date : 05/02/2026
 # Aim:
  To build a C program that receives inputs for a student’s marks in three subjects, calculates the average, and determines the grade using nested if-else statements with safe floating-point comparisons.
 # Algorithm:
@@ -56,6 +56,29 @@
 ### Step 11:
   Stop
 # Program:
+```c
+#include <stdio.h>
+
+int main() {
+    float math, science, english, average;
+
+    printf("Enter marks for Math, Science, and English: ");
+    scanf("%f %f %f", &math, &science, &english);
+
+    average = (math + science + english) / 3.0f;
+
+    if (average >= 90.0f)
+        printf("Average: %.2f Grade: A", average);
+    else if (average >= 75.0f)
+        printf("Average: %.2f Grade: B", average);
+    else if (average >= 50.0f)
+        printf("Average: %.2f Grade: C", average);
+    else
+        printf("Average: %.2f Grade: F", average);
+
+    return 0;
+}
+```
 # Output:
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
